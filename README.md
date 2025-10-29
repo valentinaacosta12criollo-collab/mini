@@ -87,12 +87,12 @@
                 <p>$12.000</p>
             </div>
             <div class="producto">
-                <img src="imagen2.jpg" alt="Cuadro motivacional 2">
+                <img src="producto0.jpeg" alt="Cuadro motivacional 2">
                 <h3>Felicidad en Pequeño</h3>
                 <p>$12.000</p>
             </div>
             <div class="producto">
-                <img src="imagen3.jpg" alt="Cuadro motivacional 3">
+                <img src="producto12.jpeg" alt="Cuadro motivacional 3">
                 <h3>Inspiración Diaria</h3>
                 <p>$12.000</p>
             </div>
@@ -109,15 +109,15 @@
         <p>Aquí puedes ver algunos productos de la marca, como camisetas, pocillos y esferos.</p>
         <div class="productos">
             <div class="producto">
-                <img src="camiseta.jpg" alt="Camiseta Inspiración en Miniatura">
+                <img src="camiseta.png" alt="Camiseta Inspiración en Miniatura">
                 <h3>Camiseta</h3>
             </div>
             <div class="producto">
-                <img src="posillo.jpg" alt="Posillo Inspiración en Miniatura">
+                <img src="gorra2.png" alt="Gorra Inspiración en Miniatura">
                 <h3>Posillo</h3>
             </div>
             <div class="producto">
-                <img src="esfero.jpg" alt="Esfero Inspiración en Miniatura">
+                <img src="lapicero.png" alt="Esfero Inspiración en Miniatura">
                 <h3>Esfero</h3>
             </div>
         </div>
