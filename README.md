@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -127,8 +127,8 @@
     <section id="contacto">
         <h2>Contáctanos</h2>
         <p>Síguenos en nuestras redes sociales o escríbenos a nuestro correo electrónico.</p>
-        <p><strong>Instagram:</strong> @inspiracionenminiatura</p>
-        <p><strong>Correo:</strong> inspiracionenminiatura@gmail.com</p>
+        <p><strong>Instagram:</strong> <a class="enlace" href="https://www.instagram.com/inspiracionenminiatura" target="_blank">@inspiracionenminiatura</a></p>
+        <p><strong>Correo:</strong> <a class="enlace" href="mailto:inspiracionenminiatura@gmail.com">inspiracionenminiatura@gmail.com</a></p>
     </section>
 
     <footer>
