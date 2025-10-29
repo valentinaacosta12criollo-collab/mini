@@ -100,20 +100,92 @@
         </div>
     </section>
     
-   <section id="personalizados">
-      <div class="section-title"><h2>Personaliza el tuyo</h2></div>
-      <div class="customize">
-        <p>Si quieres un mensaje, una palabra o un diseño especial, rellena este formulario y nos pondremos en contacto contigo.</p>
-        <form onsubmit="event.preventDefault(); handleForm();">
-          <input type="text" id="nombre" placeholder="Tu nombre" required />
-          <input type="email" id="correo" placeholder="Tu correo electrónico" required />
-          <input type="text" id="mensaje" placeholder="Texto o indicaciones (ej: 'Para mamá', 'Ánimo')" required />
-          <label style="font-size:13px;color:#5b463f">Si tienes una referencia (imagen), puedes describirla aquí:</label>
-          <textarea id="referencia" rows="3" placeholder="Descripción de la idea"></textarea>
-          <button type="submit">Enviar solicitud — $12.000</button>
-        </form>
-      </div>
-    </section>
+  <section id="personalizados">
+  <h2>Personaliza el tuyo</h2>
+  <p>Si quieres un mensaje, una palabra o un diseño especial, rellena este formulario y nos pondremos en contacto contigo.</p>
+  
+  <div class="formulario-personalizado">
+    <form onsubmit="event.preventDefault(); handleForm();">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" placeholder="Tu nombre" required />
+
+      <label for="correo">Correo electrónico:</label>
+      <input type="email" id="correo" placeholder="Tu correo electrónico" required />
+
+      <label for="mensaje">Mensaje o indicaciones:</label>
+      <input type="text" id="mensaje" placeholder="Ej: 'Para mamá', 'Ánimo'" required />
+
+      <label for="referencia">Referencia o descripción de la idea:</label>
+      <textarea id="referencia" rows="3" placeholder="Describe brevemente tu idea"></textarea>
+
+      <button type="submit">Enviar solicitud — $12.000</button>
+    </form>
+  </div>
+</section>
+
+<style>
+  #personalizados {
+    text-align: center;
+    padding: 40px;
+  }
+
+  .formulario-personalizado {
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #f9f9f9;
+    border: 2px solid #E58DB1;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  .formulario-personalizado form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .formulario-personalizado label {
+    text-align: left;
+    font-weight: bold;
+    color: #361702;
+    font-size: 14px;
+  }
+
+  .formulario-personalizado input,
+  .formulario-personalizado textarea {
+    padding: 10px;
+    border: 1.5px solid #E58DB1;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .formulario-personalizado input:focus,
+  .formulario-personalizado textarea:focus {
+    outline: none;
+    border-color: #6FEDBD;
+    background-color: #fff;
+  }
+
+  .formulario-personalizado button {
+    background-color: #E58DB1;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .formulario-personalizado button:hover {
+    background-color: #6FEDBD;
+    color: #361702;
+  }
+</style>
 
     <section id="mockup">
         <h2>Mockup del Emprendimiento</h2>
