@@ -67,7 +67,7 @@
 </head>
 <body>
     <header>
-        <img src="logotipo4.png" alt="Logo de Inspiración en Miniatura" style="width:100px; height:auto; display:block; margin:0 auto 10px auto;">
+        <img src="logotipo-removebg-preview.png" alt="Logo de Inspiración en Miniatura" style="width:100px; height:auto; display:block; margin:0 auto 10px auto;">
          style="width:120px; height:auto; display:block; margin:0 auto 10px auto; background-color:#E58DB1;">
         <h1>Inspiración en Miniatura</h1>
         <p>Cuadros en arcilla con mensajes motivacionales y personalizados</p>
