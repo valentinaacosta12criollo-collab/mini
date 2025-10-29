@@ -74,7 +74,7 @@
     height: 120px;
     display: block;
     margin: 0 auto 10px auto;
-    border-radius: 50%;
+    border-radius: 20px;
      }
  </style>
         <h1>Inspiración en Miniatura</h1>
