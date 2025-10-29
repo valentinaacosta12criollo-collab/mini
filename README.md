@@ -1,4 +1,3 @@
-
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -83,7 +82,7 @@
         <p>Cada mini cuadro tiene un valor de $12.000. Aquí puedes ver algunos de nuestros diseños:</p>
         <div class="productos">
             <div class="producto">
-                <img src="imagen1.jpg" alt="Cuadro motivacional 1">
+                <img src="producto10.jpeg" alt="Cuadro motivacional 1">
                 <h3>Mensaje Positivo</h3>
                 <p>$12.000</p>
             </div>
