@@ -99,12 +99,13 @@
             </div>
         </div>
     </section>
-
-    <section id="personalizados">
-        <h2>Cuadros Personalizados</h2>
-        <p>Puedes personalizar tu cuadro con el mensaje o diseño que desees por el mismo valor de $12.000.</p>
+    
+   <section id="personalizados">
+      <div class="section-title"><h2>Personaliza el tuyo</h2></div>
+      <div class="customize">
+        <p>Si quieres un mensaje, una palabra o un diseño especial, rellena este formulario y nos pondremos en contacto contigo.</p>
         <form onsubmit="event.preventDefault(); handleForm();">
-        <input type="text" id="nombre" placeholder="Tu nombre" required />
+          <input type="text" id="nombre" placeholder="Tu nombre" required />
           <input type="email" id="correo" placeholder="Tu correo electrónico" required />
           <input type="text" id="mensaje" placeholder="Texto o indicaciones (ej: 'Para mamá', 'Ánimo')" required />
           <label style="font-size:13px;color:#5b463f">Si tienes una referencia (imagen), puedes describirla aquí:</label>
