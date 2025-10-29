@@ -10,6 +10,8 @@
             padding: 0;
             background-color: #ffffff;
             color: #361702;
+            background-image: url("_(1).png");
+            background-repeat: repeat;
         }
         header {
             background-color: #E58DB1;
