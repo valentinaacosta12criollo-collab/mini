@@ -67,7 +67,7 @@
 </head>
 <body>
     <header>
-        <img src="logo2.png" alt="Logo de Inspiración en Miniatura" style="width:100px; height:auto; display:block; margin:0 auto 10px auto;">
+        <img src="logo3.png" alt="Logo de Inspiración en Miniatura" style="width:100px; height:auto; display:block; margin:0 auto 10px auto;">
         <h1>Inspiración en Miniatura</h1>
         <p>Cuadros en arcilla con mensajes motivacionales y personalizados</p>
     </header>
