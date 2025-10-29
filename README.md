@@ -8,8 +8,6 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url (patron.png); /* agrega el patrón aquí */
-            background-repeat: repeat;
             background-color: #ffffff;
             color: #361702;
            
@@ -105,6 +103,15 @@
     <section id="personalizados">
         <h2>Cuadros Personalizados</h2>
         <p>Puedes personalizar tu cuadro con el mensaje o diseño que desees por el mismo valor de $12.000.</p>
+        <form onsubmit="event.preventDefault(); handleForm();">
+        <input type="text" id="nombre" placeholder="Tu nombre" required />
+          <input type="email" id="correo" placeholder="Tu correo electrónico" required />
+          <input type="text" id="mensaje" placeholder="Texto o indicaciones (ej: 'Para mamá', 'Ánimo')" required />
+          <label style="font-size:13px;color:#5b463f">Si tienes una referencia (imagen), puedes describirla aquí:</label>
+          <textarea id="referencia" rows="3" placeholder="Descripción de la idea"></textarea>
+          <button type="submit">Enviar solicitud — $12.000</button>
+        </form>
+      </div>
     </section>
 
     <section id="mockup">
@@ -112,7 +119,7 @@
         <p>Aquí puedes ver algunos productos de la marca, como camisetas, pocillos y esferos.</p>
         <div class="productos">
             <div class="producto">
-                <img src="camiseta.png" alt="Camiseta Inspiración en Miniatura">
+                <img src="camisa.png" alt="Camiseta Inspiración en Miniatura">
                 <h3>Camiseta</h3>
             </div>
             <div class="producto">
