@@ -8,10 +8,11 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-image: url (patron.png); /* agrega el patrón aquí */
+            background-repeat: repeat;
             background-color: #ffffff;
             color: #361702;
-            background-image: url("patron.png");
-            background-repeat: repeat;
+           
         }
         header {
             background-color: #E58DB1;
