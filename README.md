@@ -196,7 +196,72 @@
     color: #361702;
   }
 </style>
+<section id="mision-vision">
+  <h2>Misión, Visión y Objetivos</h2>
+  <div class="info-container">
+    <div class="info-card">
+      <h3>Misión</h3>
+      <p>
+        Inspiración en Miniatura transforma la arcilla en pequeñas obras con mensajes positivos, promoviendo la creatividad, la gratitud y el amor por la cultura artesanal.
+      </p>
+    </div>
+    <div class="info-card">
+      <h3>Visión</h3>
+      <p>
+        Ser un referente de emprendimiento artesanal en Ciudad Bolívar, inspirando a la comunidad educativa y local a través de mini cuadros en arcilla que conectan creatividad, emociones y patrimonio cultural de manera positiva y sostenible.
+      </p>
+    </div>
+    <div class="info-card">
+      <h3>Objetivos</h3>
+      <p>
+        • Diseñar y elaborar mini cuadros en arcilla que inspiren a través de frases positivas. <br>
+        • Experimentar con diferentes estilos y temáticas para diversificar las creaciones. <br>
+        • Promover el arte artesanal como medio de comunicación emocional y cultural.
+      </p>
+    </div>
+  </div>
+</section>
 
+<style>
+  #mision-vision {
+    background-color: #fdf7f9;
+    padding: 40px;
+    text-align: center;
+  }
+
+  #mision-vision h2 {
+    color: #361702;
+    margin-bottom: 30px;
+  }
+
+  .info-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .info-card {
+    background-color: #ffffff;
+    border: 2px solid #E58DB1;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 280px;
+    text-align: center;
+  }
+
+  .info-card h3 {
+    color: #E58DB1;
+    margin-bottom: 10px;
+  }
+
+  .info-card p {
+    color: #361702;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+</style>
     <section id="mockup">
         <h2>Mockup del Emprendimiento</h2>
         <p>Aquí puedes ver algunos productos de la marca, como camisetas, Gorras y esferos.</p>
