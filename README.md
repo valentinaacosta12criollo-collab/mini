@@ -94,7 +94,7 @@
         <div class="productos">
             <div class="producto">
                 <img src="producto10.jpeg" alt="Cuadro motivacional 1">
-                <h3>Mensaje Positivo</h3>
+                <h3>Mini gatito</h3>
                 <p>$12.000</p>
             </div>
             <div class="producto">
