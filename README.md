@@ -67,6 +67,7 @@
 </head>
 <body>
     <header>
+        <img src="logo.png" alt="Logo de Inspiración en Miniatura" style="width:100px; height:auto; border-radius:50%; display:block; margin:0 auto 10px auto;">
         <h1>Inspiración en Miniatura</h1>
         <p>Cuadros en arcilla con mensajes motivacionales y personalizados</p>
     </header>
@@ -189,7 +190,7 @@
 
     <section id="mockup">
         <h2>Mockup del Emprendimiento</h2>
-        <p>Aquí puedes ver algunos productos de la marca, como camisetas, pocillos y esferos.</p>
+        <p>Aquí puedes ver algunos productos de la marca, como camisetas, Gorras y esferos.</p>
         <div class="productos">
             <div class="producto">
                 <img src="camisa.png" alt="Camiseta Inspiración en Miniatura">
@@ -197,7 +198,7 @@
             </div>
             <div class="producto">
                 <img src="gorra2.png" alt="Gorra Inspiración en Miniatura">
-                <h3>Posillo</h3>
+                <h3>Gorra</h3>
             </div>
             <div class="producto">
                 <img src="lapicero.png" alt="Esfero Inspiración en Miniatura">
