@@ -10,7 +10,7 @@
             padding: 0;
             background-color: #ffffff;
             color: #361702;
-            background-image: url("_(1).png");
+            background-image: url("patron.png");
             background-repeat: repeat;
         }
         header {
