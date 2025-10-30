@@ -109,14 +109,17 @@
       flex-wrap: wrap;
       justify-content: center;
       gap: 25px;
+      align-items: flex-start;
     }
 
     .producto {
       background: var(--blanco);
       border-radius: 15px;
-      width: 260px;
+      display: inline-block;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       transition: transform 0.3s, box-shadow 0.3s;
+      overflow: hidden;
+      max-width: 280px;
     }
 
     .producto:hover {
@@ -126,6 +129,8 @@
 
     .producto img {
       width: 100%;
+      height: auto;
+      display: block;
       border-radius: 15px 15px 0 0;
     }
 
@@ -257,8 +262,8 @@
     <img src="logotipo-removebg-preview.png" alt="Logo de Inspiración en Miniatura">
     <h1>Inspiración en Miniatura</h1>
     <h2 style="font-family:'Birthstone Bounce', cursive; color:#E58DB1; font-size:1.8em; margin-top:-5px;">
-    Cada pieza, un reflejo de ti
-  </h2>
+      Cada pieza, un reflejo de ti
+    </h2>
     <p>Cuadros en arcilla con mensajes motivacionales y personalizados</p>
   </header>
 
@@ -292,16 +297,15 @@
   </section>
 
   <section id="merchandising">
-  <h2>Aplicaciones de Marca</h2>
-  <p>Nuestra identidad se refleja en cada detalle: desde el empaque hasta la papelería.</p>
-  <div class="productos">
-    <div class="producto"><img src="camisa.png" alt="Camiseta"></div>
-    <div class="producto"><img src="gorra2.png" alt="Gorra"></div>
-    <div class="producto"><img src="lapicero.png" alt="Lapicero"></div>
-    <div class="producto"><img src="tarjeta.png" alt="Tarjeta de presentación"></div>
-  </div>
-</section>
-
+    <h2>Aplicaciones de Marca</h2>
+    <p>Nuestra identidad se refleja en cada detalle: desde el empaque hasta la papelería.</p>
+    <div class="productos">
+      <div class="producto"><img src="camisa.png" alt="Camiseta"></div>
+      <div class="producto"><img src="gorra2.png" alt="Gorra"></div>
+      <div class="producto"><img src="lapicero.png" alt="Lapicero"></div>
+      <div class="producto"><img src="tarjeta.png" alt="Tarjeta de presentación"></div>
+    </div>
+  </section>
 
   <section id="mision">
     <h2>Misión, Visión y Objetivos</h2>
@@ -318,7 +322,6 @@
         <h3>Objetivos</h3>
         <p>Diseñar mini cuadros con frases positivas, experimentar con estilos variados y promover el arte artesanal como expresión cultural.</p>
       </div>
-      
     </div>
   </section>
 
@@ -331,7 +334,7 @@
       Cada pieza es un reflejo del amor y dedicación detrás de este proyecto.
     </p>
   </section>
-  
+
   <section id="personalizados">
     <h2>Personaliza el tuyo</h2>
     <p>Rellena este formulario para pedir tu cuadro con mensaje o diseño especial.</p>
@@ -351,8 +354,6 @@
     </div>
   </section>
 
-
-  
   <section id="contacto">
     <h2>Contáctanos</h2>
     <p>Síguenos o escríbenos a nuestro correo:</p>
@@ -361,6 +362,7 @@
   </section>
 
   <footer>
+    💫 Hecho con amor y arcilla para inspirar tu día 💫<br>
     &copy; 2025 Inspiración en Miniatura — Todos los derechos reservados
   </footer>
 </body>
