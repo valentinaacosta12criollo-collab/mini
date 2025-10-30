@@ -1,300 +1,314 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inspiración en Miniatura</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #ffffff;
-            color: #361702;
-            background-image: url('patron.png'); /* Ruta del archivo */
-            background-repeat: repeat; /* Se repite el patrón */
-            background-attachment: fixed; /* Fija el fondo */
-            background-size: auto; /* Tamaño original del patrón */
-           
-        }
-        header {
-            background-color: #E58DB1;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-        }
-        nav {
-            background-color: #6FEDBD;
-            text-align: center;
-            padding: 10px 0;
-        }
-        nav a {
-            color: #361702;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        section {
-            padding: 40px;
-            text-align: center;
-        }
-        .productos {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-        }
-        .producto {
-            border: 2px solid #E58DB1;
-            border-radius: 10px;
-            width: 250px;
-            padding: 15px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            background-color: #fff;
-        }
-        .producto img {
-            width: 100%;
-            border-radius: 10px;
-        }
-        footer {
-            background-color: #E58DB1;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-        }
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inspiración en Miniatura</title>
+  
+  <!-- Fuente moderna -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  
+  <style>
+    /* 🎨 Colores base */
+    :root {
+      --rosa: #E58DB1;
+      --verde: #6FEDBD;
+      --marron: #361702;
+      --blanco: #ffffff;
+      --fondo: #fdf7f9;
+    }
+
+    /* Estilo general */
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: var(--marron);
+      background-image: url('patron.png');
+      background-repeat: repeat;
+      background-attachment: fixed;
+      background-size: 250px;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--rosa), var(--verde));
+      color: var(--blanco);
+      text-align: center;
+      padding: 50px 20px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    header img {
+      width: 120px;
+      height: auto;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    header h1 {
+      margin: 10px 0 5px;
+      font-size: 2.2em;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      font-size: 1.1em;
+    }
+
+    /* Barra de navegación */
+    nav {
+      background-color: var(--verde);
+      text-align: center;
+      padding: 12px 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      color: var(--marron);
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: 600;
+      transition: color 0.3s, border-bottom 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--rosa);
+      border-bottom: 2px solid var(--rosa);
+      padding-bottom: 2px;
+    }
+
+    /* Secciones generales */
+    section {
+      padding: 60px 20px;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.8);
+      margin: 40px auto;
+      border-radius: 20px;
+      max-width: 1000px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: var(--rosa);
+      margin-bottom: 20px;
+      font-size: 1.8em;
+    }
+
+    /* Productos */
+    .productos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    .producto {
+      background: var(--blanco);
+      border-radius: 15px;
+      width: 260px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .producto:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    }
+
+    .producto img {
+      width: 100%;
+      border-radius: 15px 15px 0 0;
+    }
+
+    .producto h3 {
+      color: var(--rosa);
+      margin: 12px 0 5px;
+    }
+
+    .producto p {
+      margin-bottom: 15px;
+    }
+
+    /* Tarjetas de misión, visión, objetivos */
+    .info-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .info-card {
+      background: var(--blanco);
+      border-radius: 15px;
+      padding: 25px;
+      width: 280px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .info-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .info-card h3 {
+      color: var(--rosa);
+    }
+
+    /* Formulario */
+    .formulario-personalizado {
+      max-width: 450px;
+      margin: 0 auto;
+      background: var(--blanco);
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      text-align: left;
+    }
+
+    .formulario-personalizado label {
+      font-weight: 600;
+      display: block;
+      margin-top: 10px;
+      color: var(--marron);
+    }
+
+    .formulario-personalizado input,
+    .formulario-personalizado textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 10px;
+      border: 1.5px solid var(--rosa);
+      font-size: 14px;
+      margin-top: 5px;
+      box-sizing: border-box;
+    }
+
+    .formulario-personalizado button {
+      background: var(--rosa);
+      color: var(--blanco);
+      border: none;
+      padding: 12px 18px;
+      border-radius: 10px;
+      font-weight: 600;
+      cursor: pointer;
+      margin-top: 15px;
+      width: 100%;
+      transition: background 0.3s;
+    }
+
+    .formulario-personalizado button:hover {
+      background: var(--verde);
+      color: var(--marron);
+    }
+
+    /* Footer */
+    footer {
+      background: linear-gradient(135deg, var(--rosa), var(--verde));
+      color: var(--blanco);
+      text-align: center;
+      padding: 25px 10px;
+      font-weight: 500;
+      margin-top: 60px;
+    }
+
+    footer a {
+      color: var(--blanco);
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    footer a:hover {
+      color: var(--marron);
+    }
+
+  </style>
 </head>
 <body>
-    <header>
-        <img src="logotipo-removebg-preview.png" alt="Logo de Inspiración en Miniatura" style="width:100px; height:auto; display:block; margin:0 auto 10px auto;">
- <style>
-  header img {
-    width: 120px;
-    height: 120px;
-    display: block;
-    margin: 0 auto 10px auto;
-    border-radius: 20px;
-     }
- </style>
-        <h1>Inspiración en Miniatura</h1>
-        <p>Cuadros en arcilla con mensajes motivacionales y personalizados</p>
-    </header>
+  <header>
+    <img src="logotipo-removebg-preview.png" alt="Logo de Inspiración en Miniatura">
+    <h1>Inspiración en Miniatura</h1>
+    <p>Cuadros en arcilla con mensajes motivacionales y personalizados</p>
+  </header>
 
-    <nav>
-        <a href="#productos">Productos</a>
-        <a href="#personalizados">Personalizados</a>
-        <a href="#mockup">Mockup</a>
-        <a href="#contacto">Contáctanos</a>
-    </nav>
+  <nav>
+    <a href="#productos">Productos</a>
+    <a href="#mision">Misión y Visión</a>
+    <a href="#personalizados">Personalizados</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
 
-    <section id="productos">
-        <h2>Productos</h2>
-        <p>Cada mini cuadro tiene un valor de $12.000. Aquí puedes ver algunos de nuestros diseños:</p>
-        <div class="productos">
-            <div class="producto">
-                <img src="producto10.jpeg" alt="Cuadro motivacional 1">
-                <h3>Mini gatito</h3>
-                <p>$12.000</p>
-            </div>
-            <div class="producto">
-                <img src="producto0.jpeg" alt="Cuadro motivacional 2">
-                <h3>Felicidad en Pequeño</h3>
-                <p>$12.000</p>
-            </div>
-            <div class="producto">
-                <img src="producto12.jpeg" alt="Cuadro motivacional 3">
-                <h3>Inspiración Diaria</h3>
-                <p>$12.000</p>
-            </div>
-        </div>
-    </section>
-    
-<section id="mision-vision">
-  <h2>Misión, Visión y Objetivos</h2>
-  <div class="info-container">
-    <div class="info-card">
-      <h3>Misión</h3>
-      <p>
-        Inspiración en Miniatura transforma la arcilla en pequeñas obras con mensajes positivos, promoviendo la creatividad, la gratitud y el amor por la cultura artesanal.
-      </p>
+  <section id="productos">
+    <h2>Nuestros Productos</h2>
+    <p>Cada mini cuadro tiene un valor de $12.000. Aquí puedes ver algunos de nuestros diseños:</p>
+    <div class="productos">
+      <div class="producto">
+        <img src="producto10.jpeg" alt="Mini gatito">
+        <h3>Mini Gatito</h3>
+        <p>$12.000</p>
+      </div>
+      <div class="producto">
+        <img src="producto0.jpeg" alt="Felicidad en Pequeño">
+        <h3>Felicidad en Pequeño</h3>
+        <p>$12.000</p>
+      </div>
+      <div class="producto">
+        <img src="producto12.jpeg" alt="Inspiración Diaria">
+        <h3>Inspiración Diaria</h3>
+        <p>$12.000</p>
+      </div>
     </div>
-    <div class="info-card">
-      <h3>Visión</h3>
-      <p>
-        Ser un referente de emprendimiento artesanal en Ciudad Bolívar, inspirando a la comunidad educativa y local a través de mini cuadros en arcilla que conectan creatividad, emociones y patrimonio cultural de manera positiva y sostenible.
-      </p>
+  </section>
+
+  <section id="mision">
+    <h2>Misión, Visión y Objetivos</h2>
+    <div class="info-container">
+      <div class="info-card">
+        <h3>Misión</h3>
+        <p>Transformar la arcilla en pequeñas obras con mensajes positivos, promoviendo la creatividad y el amor por la cultura artesanal.</p>
+      </div>
+      <div class="info-card">
+        <h3>Visión</h3>
+        <p>Ser un referente de emprendimiento artesanal en Ciudad Bolívar, inspirando a la comunidad a través del arte hecho a mano.</p>
+      </div>
+      <div class="info-card">
+        <h3>Objetivos</h3>
+        <p>Diseñar mini cuadros con frases positivas, experimentar con estilos variados y promover el arte artesanal como expresión cultural.</p>
+      </div>
     </div>
-    <div class="info-card">
-      <h3>Objetivos</h3>
-      <p>
-        • Diseñar y elaborar mini cuadros en arcilla que inspiren a través de frases positivas. <br>
-        • Experimentar con diferentes estilos y temáticas para diversificar las creaciones. <br>
-        • Promover el arte artesanal como medio de comunicación emocional y cultural.
-      </p>
+  </section>
+
+  <section id="personalizados">
+    <h2>Personaliza el tuyo</h2>
+    <p>Rellena este formulario para pedir tu cuadro con mensaje o diseño especial.</p>
+    <div class="formulario-personalizado">
+      <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required placeholder="Tu nombre">
+
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" required placeholder="Tu correo electrónico">
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" rows="3" placeholder="Ej: 'Eres capaz de todo lo que sueñas'"></textarea>
+
+        <button type="submit">Enviar solicitud — $12.000</button>
+      </form>
     </div>
-  </div>
-</section>
+  </section>
 
-<style>
-  #mision-vision {
-    background-color: #fdf7f9;
-    padding: 40px;
-    text-align: center;
-  }
+  <section id="contacto">
+    <h2>Contáctanos</h2>
+    <p>Síguenos o escríbenos a nuestro correo:</p>
+    <p><strong>Instagram:</strong> <a href="https://www.instagram.com/inspiracionenminiatura" target="_blank">@inspiracionenminiatura</a></p>
+    <p><strong>Correo:</strong> <a href="mailto:inspiracionenminiatura@gmail.com">inspiracionenminiatura@gmail.com</a></p>
+  </section>
 
-  #mision-vision h2 {
-    color: #361702;
-    margin-bottom: 30px;
-  }
-
-  .info-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-  }
-
-  .info-card {
-    background-color: #ffffff;
-    border: 2px solid #E58DB1;
-    border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    padding: 20px;
-    width: 280px;
-    text-align: center;
-  }
-
-  .info-card h3 {
-    color: #E58DB1;
-    margin-bottom: 10px;
-  }
-
-  .info-card p {
-    color: #361702;
-    font-size: 14px;
-    line-height: 1.5;
-  }
-</style>
-    <section id="mockup">
-        <h2>Mockup del Emprendimiento</h2>
-        <p>Aquí puedes ver algunos productos de la marca, como camisetas, Gorras y esferos.</p>
-        <div class="productos">
-            <div class="producto">
-                <img src="camisa.png" alt="Camiseta Inspiración en Miniatura">
-                <h3>Camiseta</h3>
-            </div>
-            <div class="producto">
-                <img src="gorra2.png" alt="Gorra Inspiración en Miniatura">
-                <h3>Gorra</h3>
-            </div>
-            <div class="producto">
-                <img src="lapicero.png" alt="Esfero Inspiración en Miniatura">
-                <h3>Esfero</h3>
-            </div>
-        </div>
-    </section>
-    
-     <section id="personalizados">
-  <h2>Personaliza el tuyo</h2>
-  <p>Si quieres un mensaje, una palabra o un diseño especial, rellena este formulario y nos pondremos en contacto contigo.</p>
-  
-  <div class="formulario-personalizado">
-    <form onsubmit="event.preventDefault(); handleForm();">
-      <label for="nombre">Nombre:</label>
-      <input type="text" id="nombre" placeholder="Tu nombre" required />
-
-      <label for="correo">Correo electrónico:</label>
-      <input type="email" id="correo" placeholder="Tu correo electrónico" required />
-
-      <label for="mensaje">Mensaje o indicaciones:</label>
-      <input type="text" id="mensaje" placeholder="Ej: 'Para mamá', 'Ánimo'" required />
-
-      <label for="referencia">Referencia o descripción de la idea:</label>
-      <textarea id="referencia" rows="3" placeholder="Describe brevemente tu idea"></textarea>
-
-      <button type="submit">Enviar solicitud — $12.000</button>
-    </form>
-  </div>
-</section>
-
-<style>
-  #personalizados {
-    text-align: center;
-    padding: 40px;
-  }
-
-  .formulario-personalizado {
-    max-width: 400px;
-    margin: 30px auto;
-    padding: 25px;
-    background-color: #f9f9f9;
-    border: 2px solid #E58DB1;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  }
-
-  .formulario-personalizado form {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .formulario-personalizado label {
-    text-align: left;
-    font-weight: bold;
-    color: #361702;
-    font-size: 14px;
-  }
-
-  .formulario-personalizado input,
-  .formulario-personalizado textarea {
-    padding: 10px;
-    border: 1.5px solid #E58DB1;
-    border-radius: 8px;
-    font-size: 14px;
-    font-family: Arial, sans-serif;
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  .formulario-personalizado input:focus,
-  .formulario-personalizado textarea:focus {
-    outline: none;
-    border-color: #6FEDBD;
-    background-color: #fff;
-  }
-
-  .formulario-personalizado button {
-    background-color: #E58DB1;
-    color: #fff;
-    border: none;
-    padding: 12px;
-    font-size: 15px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-
-  .formulario-personalizado button:hover {
-    background-color: #6FEDBD;
-    color: #361702;
-  }
-</style>
-
-    <section id="contacto">
-        <h2>Contáctanos</h2>
-        <p>Síguenos en nuestras redes sociales o escríbenos a nuestro correo electrónico.</p>
-        <p><strong>Instagram:</strong> <a class="enlace" href="https://www.instagram.com/inspiracionenminiatura" target="_blank">@inspiracionenminiatura</a></p>
-        <p><strong>Correo:</strong> <a class="enlace" href="mailto:inspiracionenminiatura@gmail.com">inspiracionenminiatura@gmail.com</a></p>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Inspiración en Miniatura - Todos los derechos reservados</p>
-    </footer>
+  <footer>
+    &copy; 2025 Inspiración en Miniatura — Todos los derechos reservados
+  </footer>
 </body>
 </html>
