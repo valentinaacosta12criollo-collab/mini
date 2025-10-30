@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Inspiración en Miniatura</title>
   
-  <!-- Fuente moderna -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Tipografías del branding -->
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;600;700&family=Birthstone+Bounce&display=swap" rel="stylesheet">
   
   <style>
-    /* 🎨 Colores base */
+    /* 🎨 Colores institucionales */
     :root {
       --rosa: #E58DB1;
       --verde: #6FEDBD;
@@ -18,9 +18,9 @@
       --fondo: #fdf7f9;
     }
 
-    /* Estilo general */
+    /* 🎨 Estilo general */
     body {
-      font-family: 'Poppins', sans-serif;
+      font-family: 'Libre Franklin', sans-serif;
       margin: 0;
       padding: 0;
       color: var(--marron);
@@ -30,6 +30,7 @@
       background-size: 250px;
     }
 
+    /* 🧵 Encabezado */
     header {
       background: linear-gradient(135deg, var(--rosa), var(--verde));
       color: var(--blanco);
@@ -46,16 +47,18 @@
     }
 
     header h1 {
-      margin: 10px 0 5px;
-      font-size: 2.2em;
+      font-family: 'Birthstone Bounce', cursive;
+      font-size: 3.2em;
       letter-spacing: 1px;
+      margin: 10px 0 5px;
     }
 
     header p {
+      font-family: 'Libre Franklin', sans-serif;
       font-size: 1.1em;
     }
 
-    /* Barra de navegación */
+    /* 🔗 Barra de navegación */
     nav {
       background-color: var(--verde);
       text-align: center;
@@ -71,6 +74,7 @@
       text-decoration: none;
       margin: 0 20px;
       font-weight: 600;
+      font-family: 'Libre Franklin', sans-serif;
       transition: color 0.3s, border-bottom 0.3s;
     }
 
@@ -80,11 +84,11 @@
       padding-bottom: 2px;
     }
 
-    /* Secciones generales */
+    /* 📦 Secciones */
     section {
       padding: 60px 20px;
       text-align: center;
-      background-color: rgba(255, 255, 255, 0.8);
+      background-color: rgba(255, 255, 255, 0.85);
       margin: 40px auto;
       border-radius: 20px;
       max-width: 1000px;
@@ -92,12 +96,14 @@
     }
 
     h2 {
+      font-family: 'Libre Franklin', sans-serif;
       color: var(--rosa);
       margin-bottom: 20px;
-      font-size: 1.8em;
+      font-size: 1.9em;
+      font-weight: 700;
     }
 
-    /* Productos */
+    /* 🎁 Productos */
     .productos {
       display: flex;
       flex-wrap: wrap;
@@ -126,13 +132,14 @@
     .producto h3 {
       color: var(--rosa);
       margin: 12px 0 5px;
+      font-weight: 600;
     }
 
     .producto p {
       margin-bottom: 15px;
     }
 
-    /* Tarjetas de misión, visión, objetivos */
+    /* 🌸 Misión / Visión */
     .info-container {
       display: flex;
       flex-wrap: wrap;
@@ -156,9 +163,11 @@
 
     .info-card h3 {
       color: var(--rosa);
+      font-family: 'Libre Franklin', sans-serif;
+      font-weight: 700;
     }
 
-    /* Formulario */
+    /* 📝 Formulario personalizado */
     .formulario-personalizado {
       max-width: 450px;
       margin: 0 auto;
@@ -174,6 +183,7 @@
       display: block;
       margin-top: 10px;
       color: var(--marron);
+      font-family: 'Libre Franklin', sans-serif;
     }
 
     .formulario-personalizado input,
@@ -185,6 +195,7 @@
       font-size: 14px;
       margin-top: 5px;
       box-sizing: border-box;
+      font-family: 'Libre Franklin', sans-serif;
     }
 
     .formulario-personalizado button {
@@ -198,6 +209,7 @@
       margin-top: 15px;
       width: 100%;
       transition: background 0.3s;
+      font-family: 'Libre Franklin', sans-serif;
     }
 
     .formulario-personalizado button:hover {
@@ -205,7 +217,18 @@
       color: var(--marron);
     }
 
-    /* Footer */
+    /* 📱 Contacto */
+    #contacto a {
+      color: var(--rosa);
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    #contacto a:hover {
+      text-decoration: underline;
+    }
+
+    /* 🌷 Footer */
     footer {
       background: linear-gradient(135deg, var(--rosa), var(--verde));
       color: var(--blanco);
@@ -213,6 +236,7 @@
       padding: 25px 10px;
       font-weight: 500;
       margin-top: 60px;
+      font-family: 'Libre Franklin', sans-serif;
     }
 
     footer a {
@@ -227,6 +251,7 @@
 
   </style>
 </head>
+
 <body>
   <header>
     <img src="logotipo-removebg-preview.png" alt="Logo de Inspiración en Miniatura">
